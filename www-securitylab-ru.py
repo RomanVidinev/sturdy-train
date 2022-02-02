@@ -17,7 +17,6 @@ def get_links():
     return news_one #возвращаем список новостей
 
 
-<<<<<<< HEAD
 def get_page_content(link): 
     """список данных для новости"""
     page = requests.get(link)
@@ -58,7 +57,8 @@ def get_page_content(link):
 
 def main(): 
     """ компиляция ссылки на новость и данных, и создание json файла """
-=======
+    
+    
 def get_page_content(link): # список данных для новости
      page = requests.get(link)
      soup = BeautifulSoup(page.content, "html.parser")
@@ -89,7 +89,6 @@ def get_page_content(link): # список данных для новости
 
 
 def main(): # компиляция ссылки на новость и данных, и создание json файла
->>>>>>> 74f25336f8757d533c0e0ef7513fbf62bd5817f8
     links = get_links() # ссылки на новости
     top_news = [] # пустой список для ссылок на новости и их данных
 
